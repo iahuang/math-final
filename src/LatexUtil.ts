@@ -48,7 +48,7 @@ export function latexSubExprToJs(latexString: string) {
         .replace(/\\tan/g, "tan")
         .replace(/\\sqrt/g, "sqrt");
     
-    return resolveImplicitMultiplication(latexString);
+    return latexString;
 }
 
 export function splitLatexSubExpr(latexString: string) {
